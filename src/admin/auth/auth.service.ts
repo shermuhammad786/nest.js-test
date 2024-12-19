@@ -8,7 +8,7 @@ import {
 import mongoose from 'mongoose';
 import { JwtService } from '@nestjs/jwt';
 import { InjectModel } from '@nestjs/mongoose';
-import { bcryptCompareData, bcryptHashingData } from 'src/helpers/bcrypt';
+import { bcryptCompareData, bcryptHashingData } from '../../helpers/bcrypt';
 import { jwtDecode } from 'jwt-decode';
 import { ConfigService } from '@nestjs/config';
 import { loginDto } from 'src/dtos/authDto/login.dto';

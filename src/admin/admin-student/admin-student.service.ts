@@ -9,7 +9,7 @@ import { createRoleDto } from 'src/dtos/roleDto/role.dto';
 import { StudentDto } from 'src/dtos/studentDto/student.dto';
 import { TeacherDto } from 'src/dtos/teacherDto/teacher.dto';
 import { EmailService } from 'src/email/email.service';
-import { bcryptHashingData } from 'src/helpers/bcrypt';
+import { bcryptHashingData } from '../../helpers/bcrypt';
 import { Course } from 'src/schema/course.schema';
 import { Student } from 'src/schema/student.schema';
 import { Teacher } from 'src/schema/teacher.schema';
