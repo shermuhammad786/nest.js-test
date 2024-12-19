@@ -7,9 +7,9 @@ import { Model } from 'mongoose';
 import { TeacherDto, UpdateTeacherDto } from 'src/dtos/teacherDto/teacher.dto';
 
 import { EmailService } from 'src/email/email.service';
-import { bcryptHashingData } from 'src/helpers/bcrypt';
-import { Course } from 'src/schema/course.schema';
-import { Teacher } from 'src/schema/teacher.schema';
+import { bcryptHashingData } from '../../helpers/bcrypt';
+import { Course } from '../../schema/course.schema';
+import { Teacher } from '../..//schema/teacher.schema';
 
 @Injectable()
 export class AdminTeacherService {

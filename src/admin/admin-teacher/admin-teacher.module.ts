@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { AdminAuthModule } from '../auth/auth.module';
 import { AuthService } from '../auth/auth.service';
 import { JwtService } from '@nestjs/jwt';
-import { JwtStrategy } from 'src/passport/jwt.strategy';
+import { JwtStrategy } from '../../passport/jwt.strategy';
 import { AdminTeacherService } from './admin-teacher.service';
 import { AdminTeacherController } from './admin-teacher.controller';
 @Module({

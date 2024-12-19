@@ -10,14 +10,14 @@ import {
     Req,
     UseGuards,
 } from '@nestjs/common';
-import { createRoleDto } from 'src/dtos/roleDto/role.dto';
+import { createRoleDto } from '../../dtos/roleDto/role.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 import { AdminTeacherService } from './admin-teacher.service';
-import { Roles } from 'src/Guards/decorators/role.decorator';
-import { Role } from 'src/Guards/enums/role.enum';
-import { RoleGuard } from 'src/Guards/guards/role.guard';
-import { TeacherDto, UpdateTeacherDto } from 'src/dtos/teacherDto/teacher.dto';
+import { Roles } from '../../Guards/decorators/role.decorator';
+import { Role } from '../../Guards/enums/role.enum';
+import { RoleGuard } from '../../Guards/guards/role.guard';
+import { TeacherDto, UpdateTeacherDto } from '../../dtos/teacherDto/teacher.dto';
 
 @Controller('api/admin/teacher')
 export class AdminTeacherController {
