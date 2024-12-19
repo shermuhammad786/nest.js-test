@@ -3,7 +3,7 @@ import { Module } from '@nestjs/common';
 import { AdminAuthModule } from '../auth/auth.module';
 import { AuthService } from '../auth/auth.service';
 import { JwtService } from '@nestjs/jwt';
-import { JwtStrategy } from 'src/passport/jwt.strategy';
+import { JwtStrategy } from '../../passport/jwt.strategy';
 import { AdminRoleService } from './role.service';
 import { AdminRoleController } from './role.controller';
 @Module({

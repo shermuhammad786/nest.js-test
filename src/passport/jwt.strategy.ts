@@ -4,9 +4,9 @@ import { InjectModel } from '@nestjs/mongoose';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { Model } from 'mongoose';
-import { Admin } from 'src/schema/admin.schema';
-import { Teacher } from 'src/schema/teacher.schema';
-import { Student } from 'src/schema/student.schema';
+import { Admin } from '../schema/admin.schema';
+import { Teacher } from '../schema/teacher.schema';
+import { Student } from '../schema/student.schema';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

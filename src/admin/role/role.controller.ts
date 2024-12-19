@@ -10,13 +10,13 @@ import {
     Req,
     UseGuards,
 } from '@nestjs/common';
-import { createRoleDto } from 'src/dtos/roleDto/role.dto';
+import { createRoleDto } from '../../dtos/roleDto/role.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { Request } from 'express';
 import { AdminRoleService } from './role.service';
-import { Roles } from 'src/Guards/decorators/role.decorator';
-import { Role } from 'src/Guards/enums/role.enum';
-import { RoleGuard } from 'src/Guards/guards/role.guard';
+import { Roles } from '../../Guards/decorators/role.decorator';
+import { Role } from '../../Guards/enums/role.enum';
+import { RoleGuard } from '../../Guards/guards/role.guard';
 
 @Controller('api/admin/role')
 export class AdminRoleController {

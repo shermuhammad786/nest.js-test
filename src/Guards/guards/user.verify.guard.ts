@@ -4,7 +4,7 @@ import { Reflector } from '@nestjs/core';
 import { Role } from '../enums/role.enum';
 
 import { ROLES_KEY } from '../decorators/verify.user.decorator';
-import { AdminRoleService } from 'src/admin/role/role.service';
+import { AdminRoleService } from '../../admin/role/role.service';
 // import { User } from 'src/schema/auth.shcema';
 // import { Model } from 'mongoose';
 

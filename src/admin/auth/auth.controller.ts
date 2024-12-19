@@ -10,10 +10,10 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { loginDto } from 'src/dtos/authDto/login.dto';
+import { loginDto } from '../../dtos/authDto/login.dto';
 import { AuthGuard } from '@nestjs/passport';
-import { changePasswordDto } from 'src/dtos/authDto/changePassword.dto';
-import { refreshAccessToken } from 'src/dtos/authDto/refreshAccessToken.dto';
+import { changePasswordDto } from '../../dtos/authDto/changePassword.dto';
+import { refreshAccessToken } from '../../dtos/authDto/refreshAccessToken.dto';
 
 @Controller('api/admin/auth')
 export class AuthController {
