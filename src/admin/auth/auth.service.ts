@@ -11,11 +11,11 @@ import { InjectModel } from '@nestjs/mongoose';
 import { bcryptCompareData, bcryptHashingData } from '../../helpers/bcrypt';
 import { jwtDecode } from 'jwt-decode';
 import { ConfigService } from '@nestjs/config';
-import { loginDto } from 'src/dtos/authDto/login.dto';
-import { changePasswordDto } from 'src/dtos/authDto/changePassword.dto';
-import { refreshAccessToken } from 'src/dtos/authDto/refreshAccessToken.dto';
-import { Teacher } from 'src/schema/teacher.schema';
-import { Admin } from 'src/schema/admin.schema';
+import { loginDto } from '../../dtos/authDto/login.dto';
+import { changePasswordDto } from '../../dtos/authDto/changePassword.dto';
+import { refreshAccessToken } from '../../dtos/authDto/refreshAccessToken.dto';
+import { Teacher } from '../../schema/teacher.schema';
+import { Admin } from '../../schema/admin.schema';
 
 @Injectable()
 export class AuthService {

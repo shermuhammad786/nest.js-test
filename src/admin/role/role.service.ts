@@ -3,8 +3,8 @@ import { BadRequestException, Injectable, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Request } from 'express';
 import { Model } from 'mongoose';
-import { createRoleDto } from 'src/dtos/roleDto/role.dto';
-import { Role } from 'src/schema/role.schema';
+import { createRoleDto } from '../../dtos/roleDto/role.dto';
+import { Role } from '../../schema/role.schema';
 
 @Injectable()
 export class AdminRoleService {
